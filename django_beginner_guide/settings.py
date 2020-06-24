@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     # Internal App
     'django_beginner_guide.rest_architecture_app',
+    'django_beginner_guide.mtv_architecture_app',
 ]
 
 MIDDLEWARE = [
@@ -60,7 +61,7 @@ ROOT_URLCONF = 'django_beginner_guide.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

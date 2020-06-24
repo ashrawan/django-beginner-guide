@@ -132,10 +132,10 @@ admin.site.register(Team)
 
 
 ## Django Architecture
-- MVC Pattern ( Work on templates)
-- Rest-framework ( Work on Rest APIs)
+- MTV Architecture ( Work on templates- Model, Template, View)
+- Rest-framework ( Work on Rest APIs - Representational state transfer)
 
-## :star: Integrating our Models and Views (MVC Pattern) :star:
+## :star: Integrating our Models, Views and Templates (MTV architecture) :star:
 
 #### Ways of Writing to Template
 - [ ] TODO Returning HTML content itself

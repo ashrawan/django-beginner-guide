@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<a href="{% url 'books' %}">Back to List</a>
+
+<h2>Book Detail</h2>
+    <b> Book Name </b> : {{ book.name }}
+    </br>
+    <b> Its About </b> : {{ book.description }}
+{% endblock %}
