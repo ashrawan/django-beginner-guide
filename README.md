@@ -1,7 +1,5 @@
-### "Django-Beginner-Guide" : This Readme is on the development phase, feel free to leave a feedback or help to contribute.
-#### The Source code is more directed towards containing code snippet for understanding Django
-
-[ ] __TODO__ : Django Prerequisite
+### "Django-Beginner-Guide" : This Readme was created while learning django.
+#### The Source code available above is more directed towards containing code snippet for understanding Django
 
 # Getting Started - Django  
 ## :star: Setting Up virtual environment :star:
@@ -69,10 +67,10 @@ path('dash/', include('dashapp.urls'))
 
 ## :star: Working with Models :star:
 
-[ ] __TODO__ : Model fields, Meta   
-[ ] __TODO__ : QuerySet, Query Methods, Pagination, QueryManager   
-[ ] __TODO__ : Signaling  
-[ ] __TODO__ : Auth User Model 
+[X] Model fields, Meta   
+[X] QuerySet, Query Methods, Pagination, QueryManager   
+[X] Signaling  
+[X] Auth User Model 
 
 Example: 
 ```python
@@ -138,9 +136,9 @@ admin.site.register(Team)
 ## :star: Integrating our Models, Views and Templates (MTV architecture) :star:
 
 #### Ways of Writing to Template
-- [ ] TODO Returning HTML content itself
-- [ ] TODO Loading a template, filling a context and returning rendered template
-- [ ] OnProgress Using Generic Class based Views 
+- [X] Returning HTML content itself
+- [X] Loading a template, filling a context and returning rendered template
+- [X] OnProgress Using Generic Class based Views 
 
 1. Setting Up Generic Class based Views
 ```python
@@ -221,9 +219,9 @@ TEMPLATES = [
     <b> Submission Deadline </b> : {{ project.deadline }}
 {% endblock %}
 ```
-- [ ] TODO Understanding template tags
-- [ ] TODO Working with ModelForm
-- [ ] TODO XHR request from our template
+- [ ] Understand template tags
+- [ ] Work with ModelForm
+- [ ] XHR request from our template
 
 ## :star: Integrating our Models and Views (REST Pattern) :star:
 
@@ -249,17 +247,16 @@ class ProjectSerializer(serializers.ModelSerializer):
     model = Project
     fields = ('project_id', 'project_name', 'deadline')
 ```
-[ ] __TODO__ : Serializer Options
+[ ] Serializer Options
 
 #### Ways of Creating REST endpoints
-- [X] __SOURCE__ : Custom separate view method for each CRUD
-- [X] __SOURCE__ : TODO Custom View method that checks the request type and performs required respective logic
-
-- [X] __SOURCE__ : TODO Using View classes provided by rest framework: APIView and classes composed by mixin 
+- [X] Custom separate view method for each CRUD
+- [X] Custom View method that checks the request type and performs required respective logic
+- [X] Using View classes provided by rest framework: APIView and classes composed by mixin 
 
 #### Authenticating REST endpoints
-- [ ] __TODO__ : Authenticating endpoints
-- [ ] __TODO__: Custom user login and registration
+- [ ] Authenticating endpoints
+- [ ] Custom user login and registration
 
 2. Setting up "Views.py" (View classe example)
 ```python
